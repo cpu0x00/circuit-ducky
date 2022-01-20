@@ -26,7 +26,7 @@ this project is actually inspired by dbisu's pico-ducky project
 
 - MDBT50Q-RX: pressing the bootloader button plug it and you should see it up in the bootloader mode drag and drop the circuitpython uf2 file included in its Directory and it should go down and come up again as CIRCUITPY device [only required one time]
 
-- proximity trinkey: plug it in without pressing any button and then press the bootloader button two time while its in you should see it up in the bootloader mode 
+- proximity trinkey: plug it in without pressing any button and then press the bootloader button two times while its in you should see it up in the bootloader mode 
 drag and drop the circuitpython uf2 file included in its Directory and it should go down and come up again as CIRCUITPY device [only required one time]
 
 - the following stuff works on any os except for the payload editing script works only on linux
@@ -40,7 +40,7 @@ drag the adafruit_hid folder and drop it in the board's lib folder, now its an h
 ## parsing ducky payloads to circuitpython
 
 - using (ducky_to_python.py) script you can write a normal ducky script and run ducky_to_python.py ex.: [python3 ducky_to_python.py <DUCKY_PAYLOAD>] 
-it doesn't matter what file contains the ducky script it can be a text file, then it will change it to a circuitpython code and save it in a (code.py) file
+it doesn't matter what file contains the ducky script it can be a text file, then it will change it to a circuitpython code and save it in as a (code.py) file
 drag and drop this file to the CIRCUITPY root Directory and it will run and every time you plug it in it will run
 
 
