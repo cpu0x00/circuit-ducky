@@ -1,25 +1,28 @@
 # cheap-ducky
 
-this is how you can creat your very own rubber ducky like usb with circuitpython and a couple of hid compatible usb boards 
+this is how you can creat your very own rubber ducky like, usb with circuitpython and a couple of hid compatible usb boards 
 
 the boards i used :
 
 1- MDBT50Q-RX 
 
-![alt text](https://raw.githubusercontent.com/mr-nobody20/cheap-ducky/main/pics/raytac_mdbt50q-rx.jpg?token=GHSAT0AAAAAABOZJU7TM26S5EHQR4AXQM22YPJOP2Q)
+<img src="pics/raytac_mdbt50q-rx.jpg">
 
 if you want things to be easy setting up this board you should get it from adafruit (https://www.adafruit.com/product/5199) because it will come with bootloader button working out of the box 
 
 2- proximity trinkey
 
-![alt text](https://raw.githubusercontent.com/mr-nobody20/cheap-ducky/main/pics/proximity_trinkey.jpg?token=GHSAT0AAAAAABOZJU7T54LX7CAUNLVFLCGYYPJOPLQ)
+<img src="pics/proximity_trinkey.jpg">
 
 you can get this board from adafruit (https://www.adafruit.com/product/5022) [to enter the bootloader mode in this board plug it in and press the button two times]
 definitely 3d print custom cover for that board
 
 3- rasperry pi pico 
+
 the pico is already been made check out the awesome way to do it from: https://github.com/dbisu/pico-ducky 
+
 i just created an easy way to change payloads 
+
 this project is actually inspired by dbisu's pico-ducky project
 
 ## now let's get to how to set these boards up to work
@@ -39,22 +42,26 @@ drag the adafruit_hid folder and drop it in the board's lib folder, now its an h
 
 ## parsing ducky payloads to circuitpython
 
-- using (ducky_to_python.py) script you can write a normal ducky script and run ducky_to_python.py ex.: [python3 ducky_to_python.py <DUCKY_PAYLOAD>] 
+- using (ducky_to_python.py) script you can write a normal ducky script and run ducky_to_python.py 
+
+- ex.: [python3 ducky_to_python.py <DUCKY_PAYLOAD>] 
+
 it doesn't matter what file contains the ducky script it can be a text file, then it will change it to a circuitpython code and save it in as a (code.py) file
-drag and drop this file to the CIRCUITPY root Directory and it will run and every time you plug it in it will run
+
+drag and drop this file to the CIRCUITPY root Directory and it will run and now every time you plug it in any computer it will run the payload
 
 
 ## changing an existing payload
 
-- the changing payload script (edit_payload.py) does not support windows only linux (at least for now)
+- the changing payload script (edit_payload.py) does not support windows,  only linux is supported (at least for now)
 
-- the edit_payload.py script made to prevent and delete the code.py from running when you plug in the board by deleting the (code.py) before it has a chance to run
+- the edit_payload.py script made to prevent the code.py from running when you plug in the board by deleting the (code.py) before it has a chance to run
 
 there is a couple of steps to be done before it can work: [required one time]
   - first: in your (/media/<YOUR_USER_NAME>/) creat a file called CIRCUITPY 
   - second: plug in the board (not the one with script on it) just an empty CIRCUITPY board and stop with the mouse on top of the board name (CIRCUITPY) to find its id like that:
 
-![alt text](https://raw.githubusercontent.com/mr-nobody20/cheap-ducky/main/pics/device_indicator.png?token=GHSAT0AAAAAABOZJU7SINZAU4XG2GTCWBDOYPJOOWQ)
+<img src="pics/device_indicator.png">
 
 then change the (device_id) variable in the script to yours [without /dev] ex.: device_id = 'sdb1'
 
@@ -78,7 +85,7 @@ or if you want to just check if there's a payload or not do the same and if ther
 
 - sometimes the script is buggie if you find a big amount of [kbd.send(None, SOMETHINGS)] delete them and it will be good to go
 
-- obviously if you have a better for the script ideas make it happen and hit me up with it !
+- obviously if you have a better ideas for the script ideas make it happen and hit me up with it !
 
 
 
