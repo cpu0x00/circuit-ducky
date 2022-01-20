@@ -1,4 +1,4 @@
-# cheap-ducky
+# usb-ducky
 
 this is how you can creat your very own rubber ducky like, usb with circuitpython and a couple of hid compatible usb boards 
 
