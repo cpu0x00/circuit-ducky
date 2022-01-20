@@ -85,6 +85,8 @@ or if you want to just check if there's a payload or not do the same and if ther
 
 - sometimes the script is buggie if you find a big amount of [kbd.send(None, SOMETHINGS)] delete them and it will be good to go
 
+- the script does not support DEFAULT_DELAY ducky command
+
 - obviously if you have a better ideas for the script ideas make it happen and hit me up with it !
 
 
