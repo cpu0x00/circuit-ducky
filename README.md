@@ -6,13 +6,13 @@ the boards i used :
 
 1- MDBT50Q-RX 
 
-![alt text](https://raw.githubusercontent.com/mr-nobody20/cheap-ducky/main/pics/raytac_mdbt50q-rx.jpg?token=GHSAT0AAAAAABOZJU7SKBIBPCPRDMIDWPDOYPJKNLQ)
+![alt text](https://raw.githubusercontent.com/mr-nobody20/cheap-ducky/main/pics/raytac_mdbt50q-rx.jpg?token=GHSAT0AAAAAABOZJU7TM26S5EHQR4AXQM22YPJOP2Q)
 
 if you want things to be easy setting up this board you should get it from adafruit (https://www.adafruit.com/product/5199) because it will come with bootloader button working out of the box 
 
 2- proximity trinkey
 
-![alt text](https://raw.githubusercontent.com/mr-nobody20/cheap-ducky/main/pics/proximity_trinkey.jpg?token=GHSAT0AAAAAABOZJU7S754Q4VJSJK5M4MROYPJKKTQ)
+![alt text](https://raw.githubusercontent.com/mr-nobody20/cheap-ducky/main/pics/proximity_trinkey.jpg?token=GHSAT0AAAAAABOZJU7T54LX7CAUNLVFLCGYYPJOPLQ)
 
 you can get this board from adafruit (https://www.adafruit.com/product/5022) [to enter the bootloader mode in this board plug it in and press the button two times]
 definitely 3d print custom cover for that board
@@ -54,7 +54,7 @@ there is a couple of steps to be done before it can work: [required one time]
   - first: in your (/media/<YOUR_USER_NAME>/) creat a file called CIRCUITPY 
   - second: plug in the board (not the one with script on it) just an empty CIRCUITPY board and stop with the mouse on top of the board name (CIRCUITPY) to find its id like that:
 
-![alt text](https://raw.githubusercontent.com/mr-nobody20/cheap-ducky/main/pics/device_indicator.png?token=GHSAT0AAAAAABOZJU7SGEJBTZXZGOZHQENSYPJNREQ)
+![alt text](https://raw.githubusercontent.com/mr-nobody20/cheap-ducky/main/pics/device_indicator.png?token=GHSAT0AAAAAABOZJU7SINZAU4XG2GTCWBDOYPJOOWQ)
 
 then change the (device_id) variable in the script to yours [without /dev] ex.: device_id = 'sdb1'
 
