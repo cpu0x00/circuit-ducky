@@ -97,7 +97,10 @@ or if you want to just check if there's a payload or not do the same and if ther
 
 - replace the other hardcoded variables with the (flash_script , circuitpyuf2 , hid_lib) to thier locations on your system
 
-- now everytime you want to change a payload just run the script with the required arguments ex.: [python3 pico_to_ducky.py payload.dd duckyinpython.py]
+- now everytime you want to change a payload run the script with the required arguments before plugging in the pico and plug in the pico pressing the bootloader
+ button 
+
+- ex.: [python3 pico_to_ducky.py payload.dd duckyinpython.py]
 and the script will do the work for you 
 
 
