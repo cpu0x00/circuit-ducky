@@ -116,7 +116,22 @@ for line in duckypayload:
 		l = line.replace('REM','#')
 		cp_line = l.replace('\n','')
 		file.append(cp_line)
+
+	if line[0:6] == 'REPEAT':
+		l = line.replace('REPEAT','')
+		new_line = l.replace('\n','')
+		if new_line == '':
+			previous_line = len(file) - 1
+			cp_line = file[previous_line]
+			file.append(cp_line)
+		if new_line != '':
+			previous_line = len(file) - 1
+			cp_line = file[previous_line]
+			for _ in range(int(new_line)):
+
+				file.append(cp_line)		 
 	
+
 
 	for key, value in ducky_commands.items():
 		for char in chars:
@@ -201,12 +216,13 @@ layout = KeyboardLayout(kbd)
 
 '''
 
+name = 'code.py'
 
-write_libs = open('code.py', 'w').write(libs)
+write_libs = open(name, 'w').write(libs)
 
-write_payload = open('code.py', 'a').write('\n'.join(file))
+write_payload = open(name, 'a').write('\n'.join(file))
 
-write_libs = open('code.py', 'a').write('\n')
+write_libs = open(name, 'a').write('\n')
 
 if write_payload:
-	print(f'[*] circuitpython payload generated in code.py file')
+	print(f'[*] circuitpython payload generated in {name} file')
