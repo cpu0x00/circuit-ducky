@@ -101,9 +101,18 @@ for line in duckypayload:
 	if 'STRING' in line:
 		l = line.replace('STRING ', '')
 		new_line = l.replace('\n', '')
-		cp_line = f'layout.write("{new_line}")'
-		file.append(cp_line)
+		if '"' in new_line:
 
+			cp_line = f"layout.write(r'{new_line}')"
+			file.append(cp_line)
+		if "'" in new_line:
+			cp_line = f'layout.write(r"{new_line}")'
+			file.append(cp_line)
+
+		else:
+			cp_line = f"layout.write(r'{new_line}')"
+			file.append(cp_line)
+		
 
 	if 'DELAY' in line:
 		l = line.replace('DELAY ', '')
