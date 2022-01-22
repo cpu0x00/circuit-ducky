@@ -109,7 +109,7 @@ for line in duckypayload:
 			cp_line = f'layout.write(r"{new_line}")'
 			file.append(cp_line)
 
-		else:
+		if not "'" in new_line and '"' not in new_line:
 			cp_line = f"layout.write(r'{new_line}')"
 			file.append(cp_line)
 		
