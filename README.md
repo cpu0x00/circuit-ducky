@@ -42,7 +42,8 @@ drag the adafruit_hid folder and drop it in the board's lib folder, now its an h
 
 ## parsing ducky payloads to circuitpython
 
-- using (ducky_to_python.py) script you can write a normal ducky script and run ducky_to_python.py 
+- using (ducky_to_python.py) script you can write a normal ducky script and run ducky_to_python.py on it to change it to a circuitpython payload its like the 
+duckencoder with the rubber ducky
 
 - ex.: [python3 ducky_to_python.py <DUCKY_PAYLOAD>] 
 
