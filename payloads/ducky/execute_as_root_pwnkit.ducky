@@ -32,7 +32,7 @@ ENTER
 
 DELAY 100
 
-STRING ./pwnkit
+STRING ./pwnkit_poc
 
 DELAY 150
 
