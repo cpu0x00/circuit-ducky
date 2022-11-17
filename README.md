@@ -4,6 +4,8 @@ this is how you can creat your very own rubber ducky like, usb with circuitpytho
 
 the boards i used :
 
+- Note that you only need one of them (or any other board that support hid and circuitpython) im just showing options.
+
 1- MDBT50Q-RX 
 
 <img src="pics/raytac_mdbt50q-rx.jpg">
