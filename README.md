@@ -93,6 +93,10 @@ or if you want to just check if there's a payload or not do the same and if ther
 - obviously if you have a better ideas for the script ideas make it happen and hit me up with it !
 
 
+## finding supported devices 
+
+- every module and their supported library can be found in circuitpython's <a href="https://docs.circuitpython.org/en/latest/shared-bindings/support_matrix.html">Module Support Matrix</a> any module compatible with the `usb_hid` library can be used
+
 
 ## the easy way to change a payload on the pico:
 
